@@ -9,3 +9,8 @@
 # The syntax in playwright is page.locator().click to click, textContent() to get inner text, isVisible, isChecked, witFor(), fill(), pressSequentially() to enter a letter one by one.
 
 # PlayWrightJS
+# Variables in JS are loosely tight, which means they can hold any type of variables
+# The ES6 engine forward uses the let and const key words to define the variables.
+# The method typeof() in JS will tell what type of data type the varible is
+# Types of data types in JS: Number, String, Boolean, Undefined, null
+# We can not redeclare a variable with let key word, but it is possible with var, reassigning is allowed by let key word

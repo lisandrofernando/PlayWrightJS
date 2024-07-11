@@ -1,17 +1,18 @@
 const {test, expect } = require('@playwright/test');
- const {LoginPage} =  require('../Page_Object/LoginPage');
- const {Dashboard} =  require('../Page_Object/Dashboard');
+const {POManager} =  require('../Page_Object/POManager');
+const dataset = JSON.parse(JSON.stringify(require("../utils/testData.json")));
+ 
 
 test.only('Ecomerce E2E', async ({page}) => {
-
-    const email = "lisandrofernando@demo.com";
-    const password = "Lisandro100@";
-    const productName = 'zara coat 3';
-    const loginPage = new LoginPage(page);
-    loginPage.goTo();
-    loginPage.validLogin(email, password);
-    const dashBoard = new Dashboard(page);
-    dashBoard.searchProduct(productName)
+    const poManager = new POManager(page);
+    // //const userName = "lisandrofernando@demo.com";
+    // const password = "Lisandro100@";
+    // const productName = 'zara coat 3';
+    poManager.getLoginPage();
+    await loginPage.goTo();
+    await loginPage.validLogin(dataset.username, dataset.password);
+    poManager.getDashboard();
+    dashBoard.searchProduct(dataset.productname)
     dashBoard.navigateToCart();
     
     

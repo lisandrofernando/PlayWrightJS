@@ -25,4 +25,4 @@ class Dashboard{
 }
 
 
-module.exports = {Dashboard}
+module.exports = {Dashboard};
