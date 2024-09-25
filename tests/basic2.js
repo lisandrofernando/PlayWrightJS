@@ -67,3 +67,5 @@ console.log('gender' in person) // will return a boolean
 for(let key in person){
     console.log(person[key])
 }
+
+// What is a call back?

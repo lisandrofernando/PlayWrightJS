@@ -1,4 +1,4 @@
-# To run the tests execute the script: npx playwright test
+# To run the tests execute the script: npx playwright test/ or npm run test
 # To record and playback in playwright run: npx playwright codegen http://google.com
 # In the playwright.config.js we can configure the time to run our tests, reporter, browser, screenshot, trace.
 # When writing our tests in playwright besides downloading the playwright package, in the test file we need to wright a constant that requires playwright, for example: const {test, expect} = require('@playwright/test').
@@ -9,7 +9,8 @@
 # The syntax in playwright is page.locator().click to click, textContent() to get inner text, isVisible, isChecked, witFor(), fill(), pressSequentially() to enter a letter one by one.
 
 # PlayWrightJS
-# Variables in JS are loosely tight, which means they can hold any type of variables
+# Variables in JS are loosely tight, which means they can hold any type of variables type, number, string, boolean,undefinde, null
+# From ES6 engine js uses let and const to hold variables. To undestand data types in js use typeof()
 # The ES6 engine forward uses the let and const key words to define the variables.
 # The method typeof() in JS will tell what type of data type the varible is
 # Types of data types in JS: Number, String, Boolean, Undefined, null

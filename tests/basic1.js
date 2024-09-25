@@ -1,4 +1,4 @@
-   const Person = require('./basic3')
+const Person = require('./basic3')
 
 // Arrays in Js
 
@@ -13,7 +13,7 @@ marks.push(100); // Will add an element at the end of the array
 marks.pop(); // will delete the last element from the array
 marks.unshift(12); // A value to be added in the beginning
 marks.indexOf(80); //which index
-marks.includes(120); // a bullian method checking if 120 is present
+marks.includes(120); // a boolean method checking if 120 is present
 subArray = marks.slice(2,5);
 console.log(subArray);
 // In order to iterate each and every element in the array 
