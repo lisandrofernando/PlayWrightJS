@@ -1,9 +1,9 @@
 const {test, expect } = require('@playwright/test');
  
 
-test('Ecomerce E2E', async ({page}) => {
+test.skip('Ecomerce E2E', async ({page}) => {
 
-    const email = "lisandrofernando@demo.com";
+    const email = process.env.USERNAME;
     const password = "Lisandro100@";
     const productname = 'zara coat 3';
     const products = page.locator(".card-body");

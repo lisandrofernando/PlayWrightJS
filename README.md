@@ -1,3 +1,5 @@
+# To initiate a project in JS type-> npm init playwright
+# Initially take a look on the tests folder and playwright.config.js
 # To run the tests execute the script: npx playwright test/ or npm run test
 # To record and playback in playwright run: npx playwright codegen http://google.com
 # In the playwright.config.js we can configure the time to run our tests, reporter, browser, screenshot, trace.

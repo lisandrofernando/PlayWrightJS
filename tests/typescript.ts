@@ -1,6 +1,6 @@
 /**
  * Typescript is a javascript superset, so all valid javascript code is also valid in Typescript code
- * In typescript declaring a variable is important add the data type for example number =4, however in JS is not necessary
+ * In typescript declaring a variable is important add the data type for example let age : number =4, however in JS is not necessary
  * npm i typescript --save-dev
  * In typescript, we have code readability, enhancement, best practices
  * tsc is the compiler for typescript files
